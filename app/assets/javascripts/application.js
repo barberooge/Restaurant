@@ -16,7 +16,20 @@
 //= require turbolinks
 //= require_tree .
 
-
-$("#showsecone").click(function(){
-    $("#secone").hide();
-}); 
+$(document).ready(function(){
+    $('#showsecone').click(function(){
+        $('#secone').fadeToggle();
+        $('#sectwo').hide();
+        $('#secthree').hide();
+    });
+    $('#showsectwo').click(function(){
+        $('#sectwo').fadeToggle();
+        $('#secthree').hide();
+        $('#secone').hide();
+    });
+    $('#showsecthree').click(function(){
+        $('#secthree').fadeToggle();
+        $('#secone').hide();
+        $('#sectwo').hide();
+    });
+});

@@ -9355,7 +9355,7 @@ iframe.uk-cover {
  */
 [hidden],
 .uk-hidden {
-  display: none !important;
+  display: none;
 }
 /* Phone landscape and bigger */
 @media (min-width: 640px) {
